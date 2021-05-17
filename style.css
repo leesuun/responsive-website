@@ -1,0 +1,297 @@
+:root {
+  --darkBg: #1f1f1f;
+  --darkerBg: #222;
+  --bgAccent: #f26c4f;
+  --bgAccentDark: #e84a2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif Grotesk Regular, Serif;
+}
+
+.wrapper {
+  background: var(--darkBg);
+  color: white;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+nav h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+nav h3 span {
+  background: var(--bgAccent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav a .menu {
+  background: var(--bgAccent);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 7px;
+}
+
+.content {
+  height: 80vh;
+  background-image: url("https://blog.kakaocdn.net/dn/UWMgK/btqD0hXFMzY/AgOVWxJDsJxinLLrkGc3kk/img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flexbox {
+  display: flex;
+  /* height: 100%; */
+}
+
+.span-6 {
+  flex-basis: 50%;
+}
+
+/* .span-6:first-child {
+  background: red;
+} */
+
+.hero-desc {
+  display: flex;
+}
+
+.inner-desc {
+  margin-top: 12rem;
+  padding: 0 1rem;
+}
+
+.hero-desc h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-desc h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hero-desc p {
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}
+
+.span-6 img {
+  height: auto;
+  width: 100%;
+}
+
+.about {
+  background: var(--darkBg);
+  color: white;
+  padding: 3rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.about h5 {
+  color: var(--bgAccentDark);
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.about-left {
+  padding-right: 1.8rem;
+}
+
+.about-left h2 {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-left p {
+  line-height: 1.7rem;
+  font-size: 1.13rem;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+}
+
+.experience span:first-child {
+  font-size: 5rem;
+  color: var(--bgAccentDark);
+  padding-right: 1rem;
+}
+
+.experience span:last-child {
+  font-size: 1.14rem;
+  line-height: 1.8rem;
+}
+
+.about-right {
+  padding-left: 1rem;
+}
+
+.about-right h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-right h2 {
+  color: var(--bgAccentDark);
+  margin-top: 2rem;
+}
+
+.small-header {
+  color: var(--bgAccentDark);
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.main-header {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.services {
+  padding: 3rem 0;
+  background-color: var(--darkerBg);
+  color: white;
+}
+
+.services-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.single-service {
+  text-align: center;
+  position: relative;
+}
+
+.single-service.active .services-inner {
+  background: var(--darkBg);
+}
+
+.single-service.active .bg,
+.single-service:hover .bg {
+  position: absolute;
+  background-image: linear-gradient(50deg, #8a2be2, #e84a2c);
+  right: -3%;
+  bottom: -3%;
+  height: 90%;
+  width: 90%;
+  z-index: -0;
+}
+
+.single-service:hover .services-inner {
+  background-color: var(--darkerBg);
+}
+
+.services-inner {
+  padding: 3rem 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.single-service span {
+  font-size: 3rem;
+  color: var(--bgAccentDark);
+}
+
+.single-service h3 {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+.single-service p {
+  line-height: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.single-service a {
+  color: var(--bgAccent);
+  font-size: 1.1rem;
+}
+
+.portfolio {
+  padding: 3rem 1rem;
+  background-color: var(--darkerBg);
+  color: #fff;
+}
+
+.portfolio h5 {
+  color: var(--bgAccent);
+  font-size: 1.1rem;
+}
+
+.portfolio h3 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.gallery-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 1rem;
+}
+
+.gallery-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-item div,
+.gallery-item a {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-item a {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

@@ -30,6 +30,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
+  position: relative;
 }
 
 nav h3 {
@@ -57,11 +58,23 @@ nav a {
   font-size: 1.2rem;
 }
 
-nav a .menu {
+nav label.menu {
   background: var(--bgAccent);
   color: white;
   padding: 0.5rem 0.8rem;
   border-radius: 7px;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.nav-menu-container {
+  transition: 1s;
+}
+
+#menuToggle:checked + .nav-menu-container {
+  left: 0;
 }
 
 .content {
@@ -73,7 +86,7 @@ nav a .menu {
 
 .flexbox {
   display: flex;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .span-6 {
@@ -121,6 +134,7 @@ nav a .menu {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .about h5 {
@@ -294,4 +308,222 @@ nav a .menu {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.testimonials {
+  padding: 5rem 0;
+  background: var(--darkBg);
+  color: #fff;
+}
+
+.slider-container {
+  width: 60%;
+  margin: auto;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.slider {
+  width: 60%;
+}
+
+.single-slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.slider-info {
+  padding: 1.5rem;
+  /* background-image: url("https://blog.kakaocdn.net/dn/UWMgK/btqD0hXFMzY/AgOVWxJDsJxinLLrkGc3kk/img.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.slider-info h2 {
+  font-size: 2rem;
+  color: var(--bgAccentDark);
+}
+
+.slider-info h3 {
+  font-size: 1.7rem;
+  margin: 1rem 0rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.slider-info h4 {
+  font-size: 1.3rem;
+  color: var(--bgAccentDark);
+  margin-bottom: 0.5rem;
+}
+
+.slider-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brands {
+  padding: 0rem 3rem;
+}
+
+.inner-brands {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.inner-brands img {
+  width: 80%;
+}
+
+.news-feed {
+  padding: 5rem 0rem;
+  background: var(--darkerBg);
+  color: #fff;
+}
+
+.news-content {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.single-news {
+  box-shadow: 0px 0px 3px #f1f1f1;
+}
+
+.single-news .news-bg {
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news-info {
+  padding: 1rem;
+}
+
+.news-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: var(--bgAccentDark);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+  .hero-img {
+    display: none;
+  }
+  .hero-desc {
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .content {
+    height: auto !important;
+    padding-bottom: 3rem;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .services-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+  }
+
+  .slider-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .single-slider {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slider-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .slider-info h3 {
+    font-size: 1rem;
+  }
+
+  .slider-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .single-img {
+    display: none;
+  }
+
+  .news-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: var(--darkerBg);
+    color: #fff;
+    top: 0;
+    left: -100%;
+    padding: 1.5rem;
+  }
+
+  .close-menu {
+    text-align: right;
+    margin-bottom: 5rem;
+  }
+
+  .menuToggler {
+    display: inline-block;
+  }
+
+  .nav-menu-container ul {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-menu-container li {
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+
+  .nav-menu-container a {
+    font-size: 1.5rem;
+  }
+
+  .services-main {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 250px);
+  }
+
+  .news-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

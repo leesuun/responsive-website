@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
@@ -23,19 +31,29 @@
           <nav>
             <h3><span>A.</span></h3>
 
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">News</a></li>
-            </ul>
+            <input type="checkbox" name="" id="menuToggle" />
+            <div class="nav-menu-container">
+              <div class="close-menu">
+                <label for="menuToggle" class="menu"
+                  ><span class="ti-close"></span
+                ></label>
+              </div>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">News</a></li>
+              </ul>
+            </div>
             <ul>
               <li>
                 <a href=""><span class="ti-search"></span></a>
               </li>
-              <li>
-                <a href=""><span class="ti-menu menu"></span></a>
+              <li class="menuToggler">
+                <label for="menuToggle" class="menu"
+                  ><span class="ti-menu"></span
+                ></label>
               </li>
             </ul>
           </nav>
@@ -216,12 +234,128 @@
       </div>
     </section>
 
+    <section class="testimonials">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="small-header">Testimonials</h5>
+          <h3 class="main-header">What People Say?</h3>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="single-slider">
+              <div class="slider-info">
+                <h2><span class="ti-comments"></span></h2>
+                <h3>
+                  We wanted to redesing our website to be trendy and who better
+                  to bring in and he did not disappoint. I Love his work
+                </h3>
+                <h4>Jason Doe</h4>
+                <p><i>Head of Human Resource</i></p>
+              </div>
+              <div
+                class="slider-image"
+                style="background-image: url(img/10.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="single-slider">
+              <div class="slider-info">
+                <h2><span class="ti-comments"></span></h2>
+                <h3>
+                  We wanted to redesing our website to be trendy and who better
+                  to bring in and he did not disappoint. I Love his work
+                </h3>
+                <h4>Jason Doe</h4>
+                <p><i>Head of Human Resource</i></p>
+              </div>
+              <div
+                class="slider-image"
+                style="background-image: url(img/11.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="single-slider">
+              <div class="slider-info">
+                <h2><span class="ti-comments"></span></h2>
+                <h3>
+                  We wanted to redesing our website to be trendy and who better
+                  to bring in and he did not disappoint. I Love his work
+                </h3>
+                <h4>Jason Doe</h4>
+                <p><i>Head of Human Resource</i></p>
+              </div>
+              <div
+                class="slider-image"
+                style="background-image: url(img/2.jpg)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brands">
+        <div class="inner-brands">
+          <img src="img/brand1.png" alt="" />
+          <img src="img/brand2.png" alt="" />
+          <img src="img/brand3.png" alt="" />
+          <img src="img/brand4.png" alt="" />
+          <img src="img/brand5.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="news-feed">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="small-header">News</h5>
+          <h3 class="main-header">Get News Feed</h3>
+        </div>
+
+        <div class="news-content">
+          <div class="single-news">
+            <div class="news-bg" style="background-image: url(img/7.jpg)"></div>
+            <div class="news-info">
+              <p class="news-title">Fortnite E3 Presentation</p>
+              <p>Marayah Kelly: <span class="date">25 Feb. 2020</span></p>
+            </div>
+          </div>
+          <div class="single-news">
+            <div class="news-bg" style="background-image: url(img/8.jpg)"></div>
+            <div class="news-info">
+              <p>Fortnite E3 Presentation</p>
+              <p>Marayah Kelly: <span class="date">25 Feb. 2020</span></p>
+            </div>
+          </div>
+          <div class="single-news">
+            <div class="news-bg" style="background-image: url(img/9.jpg)"></div>
+            <div class="news-info">
+              <p>Fortnite E3 Presentation</p>
+              <p>Marayah Kelly: <span class="date">25 Feb. 2020</span></p>
+            </div>
+          </div>
+          <div class="single-news">
+            <div
+              class="news-bg"
+              style="background-image: url(img/10.jpg)"
+            ></div>
+            <div class="news-info">
+              <p>Fortnite E3 Presentation</p>
+              <p>Marayah Kelly: <span class="date">25 Feb. 2020</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/6833760571.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -30,7 +30,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
-  position: relative;
 }
 
 nav h3 {
@@ -74,7 +73,7 @@ nav label.menu {
 }
 
 #menuToggle:checked + .nav-menu-container {
-  left: 0;
+  left: -100px;
 }
 
 .content {
